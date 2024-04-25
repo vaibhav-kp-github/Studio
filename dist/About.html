@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="./../assets/favicon/favicon.ico" type="image/x-icon">
+    
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+
+    <!-- custom css start -->
+    <link rel="stylesheet" href="./../assets/css/custom-css.css">
+    <!-- custom css end -->
+
+    <!-- Tailwind css start -->    
+    <link rel="stylesheet" href="./../assets/css/style.css">
+    <!-- Tailwind css End -->
+
+    <!-- custom javascript start -->
+    <script src="./../assets/css/custom-js.js"></script>
+    <!-- custom javascript end -->
+
+    <!-- google font link start -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- google font link end -->
+</head>
+<body class="box-border" >
+    <div class="m-auto w-full min-h-full bg-black flex flex-col">
+        
+        <!-- Hamburger manu start---------------------------------------------------------------------- -->
+
+        <div class="hidden flex-col" id="hide-show-hamburger-section" >
+            <!-- navbar menu section start -->
+
+            <div class="flex flex-row justify-between px-20 lg:px-40 py-16 mt-2">
+                <div class="">
+                    <h1 class="text-white text-2xl font-semibold "><a href="./index.html">Studio.</a</h1>
+                </div>
+                <div class="flex flex-row gap-4 items-center ">
+                    <button class="h-fit text-black text-base font-semibold bg-white rounded-3xl px-5 py-2"><a href="./contact-us.html">Contact us</a></button>
+                    <button class="flex flex-col text-white text-2xl justify-center items-center  w-12 h-12 rounded-full hover:bg-zinc-900" id="burger1" onclick="hideshow()">
+                       <i class="fa fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- navbar menu section end -->
+
+            <!-- navbar link section start -->
+
+            <ul class="min-w-full flex flex-col md:flex-row align-middle">
+                <li class="p-10 md:px-20 lg:px-40 md:py-16 w-full md:w-1/2 text-white text-5xl text-nowrap border-[1px] hover:bg-zinc-900 transition-colors delay-100 border-stone-800" ><a href="./Our-Work.html">Our work</a></li>
+                <li class="p-10 md:p-16 w-full md:w-1/2 text-white text-5xl text-nowrap border-[1px] hover:bg-zinc-900 transition-colors delay-100 border-stone-800"><a href="./About.html">About Us</a></li>
+            </ul>
+            <ul class="min-w-full flex flex-col md:flex-row align-middle">
+                <li class="p-10 md:px-20 lg:px-40 md:py-16 w-full md:w-1/2 text-white text-5xl text-nowrap border-[1px] hover:bg-zinc-900 transition-colors delay-100 border-stone-800"><a href="./our-process.html">Our Process</a></li>
+                <li class="p-10 md:p-16 w-full md:w-1/2 text-white text-5xl text-nowrap border-[1px] hover:bg-zinc-900 transition-colors delay-100 border-stone-800"><a href="./Blog.html">Blog</a></li>
+            </ul>
+
+            <!-- navbar link section end -->
+
+
+            <!-- navbar contact section start -->
+
+            <div class="text-white w-full flex flex-col gap-12 md:gap-0 md:flex-row px-20 lg:px-40 py-16 ">
+                <div class="w-full md:w-1/2 flex flex-col gap-5">
+                    <h2 class="text-lg font-semibold">Our offices</h2>
+                    <div class="flex flex-col md:flex-row gap-5 md:gap-0 justify-between">
+                        <div class="w-full md:w-1/2">
+                            <h2 class="font-semibold">Copenhagen</h2>
+                            <p class="text-base font-light">1 Carlsberg Gate</p>
+                            <p class="text-base font-light">1260, København, Denmark</p>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <h2 class="font-semibold">Billund</h2>
+                            <p class="text-base font-light">24 Lego Allé</p>
+                            <p class="text-base font-light">7190, Billund, Denmark</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 md:pl-16 flex flex-col gap-5">
+                    <h2 class="text-lg font-semibold">Follow</h2>
+                    <div class="flex gap-14">
+                        <div class="text-2xl"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></div>
+                        <div class="text-2xl"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></div>
+                        <div class="text-2xl"><a href="https://github.com/"><i class="fa-brands fa-github"></i></a></div>
+                        <div class="text-2xl"><a href="https://dribbble.com/"><i class="fa-brands fa-dribbble"></i></a></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- navbar contact section end -->
+            
+        </div>
+
+        <!-- Hamburger manu end---------------------------------------------------------------------- -->
+
+        <div class="w-full h-full bg-white flex flex-col gap-4  px-0 md:px-10 xl:px-40 rounded-t-[42px] mt-2">
+            
+            <div class="flex flex-row justify-between  py-16 px-10 md:px-0 " id="navhide">
+                <div class="">
+                    <h1 class="text-black text-2xl font-semibold"><a href="./../index.html">Studio.</a></h1>
+                </div>
+                <div class="flex flex-row gap-4 items-center ">
+                    <button class="h-fit text-white text-base font-semibold bg-black rounded-3xl px-5 py-2 "><a href="./contact-us.html">Contact us</a></button>
+                    <div class="flex flex-col justify-center items-center gap-2 w-12 h-12 rounded-full hover:bg-gray-200" onclick="hideshow()">
+                        <div class="bg-black w-6 h-0.5" ></div>
+                        <div class="bg-black w-6 h-0.5" ></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Us section start -->
+            
+            <div class="max-w-3xl flex flex-col gap-7 mt-10 px-10 md:px-0">
+                <h3 class="text-xl font-medium">About us</h3>
+                <h2 class="text-5xl  font-medium">Our strength is collaboration</h2>
+                <h3 class="text-lg text-neutral-500">We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.</h3>
+                <p class="text-neutral-500 text-base leading-8">Studio was started by three friends who noticed that developer studios were charging clients double what an in-house team would cost. Since the beginning, we have been committed to doing things differently by charging triple instead.</p>
+                <p class="text-neutral-500 text-base leading-8">At Studio, we’re more than just colleagues — we’re a family. This means we pay very little and expect people to work late. We want our employees to bring their whole selves to work. In return, we just ask that they keep themselves there until at least 6:30pm.</p>
+            </div>
+
+            <!--  Rating Section Start  -->
+
+            <div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-36 mt-10 px-10 md:px-0">
+                <div class="flex gap-6">
+                    <div class="flex flex-col gap-2">
+                        <div class="h-7 bg-black w-px"></div>
+                        <div class="h-full bg-neutral-300 w-px"></div>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <h1 class="text-black text-3xl font-semibold">35</h1>
+                        <p class="text-neutral-600">Underpaid employees</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="flex flex-col gap-2">
+                        <div class="h-7 bg-black w-px"></div>
+                        <div class="h-full bg-neutral-300 w-px"></div>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <h1 class="text-black text-3xl font-semibold">52</h1>
+                        <p class="text-neutral-600">Placated clients</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="flex flex-col gap-2">
+                        <div class="h-7 bg-black w-px"></div>
+                        <div class="h-full bg-neutral-300 w-px"></div>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <h1 class="text-black text-3xl font-semibold">$25M</h1>
+                        <p class="text-neutral-600">Invoices billed</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our culture section start -->
+
+            <div class="bg-black text-white flex flex-col gap-10 px-10 md:px-40 py-12 md:py-32 mx-0 md:-mx-10 xl:-mx-40 mt-24 md:mt-56 rounded-[42px]">
+                <div class="font-medium text-base">Our culture</div>
+                <div class="text-5xl font-medium">Balance your passion <br> with your passion for life.</div>
+                <div class="text-xl text-neutral-400">We are a group of like-minded people who share the same core values.</div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="flex gap-5">
+                        <div class="flex flex-col gap-2">
+                            <div class="h-7 bg-white w-px"></div>
+                            <div class="h-full bg-zinc-800 w-px"></div>
+                        </div>
+                        <div class="text-zinc-300"><span class="text-white font-semibold">Loyalty.</span> Our team has been with us since the beginning because none of them are allowed to have LinkedIn profiles.</div>
+
+                    </div>
+                    <div class="flex gap-5">
+                        <div class="flex flex-col gap-2">
+                            <div class="h-7 bg-white w-px"></div>
+                            <div class="h-full bg-zinc-800 w-px"></div>
+                        </div>
+                        <div class="text-zinc-300"><span class="text-white font-semibold">Trust.</span> We don’t care when our team works just as long as they are working every waking second.</div>
+
+                    </div>
+                    <div class="flex gap-5">
+                        <div class="flex flex-col gap-2">
+                            <div class="h-7 bg-white w-px"></div>
+                            <div class="h-full bg-zinc-800 w-px"></div>
+                        </div>
+                        <div class="text-zinc-300"><span class="text-white font-semibold">Compassion.</span> You never know what someone is going through at home and we make sure to never find out.</div>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!--  Leadership and team Start -->
+            <div class="flex flex-col gap-8 py-32 px-10 md:px-0">
+                
+                <div class="flex gap-3 ">
+                    <div class="h-[1.5px] w-6 bg-black "></div>
+                    <div class="h-[1.5] w-full bg-neutral-300"></div>
+                </div>
+                
+                <div class="w-full flex flex-col lg:flex-row gap-8 lg:gap-8 py-12 ">
+                    <div class=" w-full md:w-1/4 ">
+                        <div class="text-2xl font-semibold tracking-widest">Leadership</div>
+                    </div>
+                    <div class="mx-auto w-full md:w-3/4  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
+                        <div class="grayscale rounded-3xl overflow-hidden bg-slate-600 relative group">
+                            <img src="./../assets/images/leslie-alexander (280px).webp" alt=""  class="h-96 w-full object-cover group-hover:scale-105 transition-all duration-500">
+                            <div class="text-white absolute  p-4 pb-6 inset-0  flex justify-end  flex-col gap-1 bg-gradient-to-t from-black to-25%">
+                                <div class="font-medium text-xl">Leslie Alexander</div>
+                                <div class="text-sm font-light">Co-Founder / CEO</div>
+                            </div>
+                        </div>
+                        <div class="grayscale rounded-3xl overflow-hidden bg-slate-600 relative group">
+                            <img src="./../assets/images/michael-foster.webp" alt=""  class="h-96 w-full object-cover group-hover:scale-105 transition-all duration-500">
+                            <div class="text-white absolute  p-4 pb-6 inset-0  flex justify-end  flex-col gap-1 bg-gradient-to-t from-black to-25%">
+                                <div class="font-medium text-xl">Michael Foster</div>
+                                <div class="text-sm font-light">Co-Founder / CTO</div>
+                            </div>
+                        </div>
+                        <div class="grayscale rounded-3xl overflow-hidden bg-slate-600 relative group">
+                            <img src="./../assets/images/dries-vincent.webp" alt=""  class="h-96 w-full object-cover group-hover:scale-105 transition-all duration-500">
+                            <div class="text-white absolute  p-4 pb-6 inset-0  flex justify-end  flex-col gap-1 bg-gradient-to-t from-black to-25%">
+                                <div class="font-medium text-xl">Dries Vincent</div>
+                                <div class="text-sm font-light">Partner & Business Relations</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leadership start -->
+                <div class="flex gap-3 ">
+                    <div class="h-[1.5px] w-6 bg-black "></div>
+                    <div class="h-[1.5] w-full bg-neutral-300"></div>
+                </div>
+                
+                <!-- team start -->
+                <div class="w-full flex flex-col lg:flex-row gap-8 lg:gap-8 py-12 ">
+                    <div class=" w-full md:w-1/4 ">
+                        <div class="text-2xl font-semibold tracking-widest">Team</div>
+                    </div>
+                    <div class="mx-auto w-full md:w-3/4  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
+                        <div class="grayscale rounded-3xl overflow-hidden bg-slate-600 relative group ">
+                            <img src="./../assets/images/chelsea-hagon  team.webp" alt=""  class="h-96 w-full object-cover group-hover:scale-105 transition-all duration-500">
+                            <div class="text-white absolute  p-4 pb-6 inset-0  flex justify-end  flex-col gap-1 bg-gradient-to-t from-black to-25%">
+                                <div class="font-medium text-xl">Leslie Alexander</div>
+                                <div class="text-sm font-light">Co-Founder / CEO</div>
+                            </div>
+                        </div>
+                        <div class="grayscale rounded-3xl overflow-hidden bg-slate-600 relative group ">
+                            <img src="./../assets/images/emma-dorsey team.webp" alt=""  class="h-96 w-full object-cover group-hover:scale-105 transition-all duration-500">
+                            <div class="text-white absolute  p-4 pb-6 inset-0  flex justify-end  flex-col gap-1 bg-gradient-to-t from-black to-25%">
+                                <div class="font-medium text-xl">Michael Foster</div>
+                                <div class="text-sm font-light">Co-Founder / CTO</div>
+                            </div>
+                        </div>
+                        <div class="grayscale rounded-3xl overflow-hidden bg-slate-600 relative group ">
+                            <img src="./../assets/images/leonard-krasner team.webp" alt=""  class="h-96 w-full object-cover group-hover:scale-105 transition-all duration-500">
+                            <div class="text-white absolute  p-4 pb-6 inset-0  flex justify-end  flex-col gap-1 bg-gradient-to-t from-black to-25%">
+                                <div class="font-medium text-xl">Dries Vincent</div>
+                                <div class="text-sm font-light">Partner & Business Relations</div>
+                            </div>
+                        </div>
+                        <div class="grayscale rounded-3xl overflow-hidden bg-slate-600 relative group ">
+                            <img src="./../assets/images/blake-reid tem.webp" alt=""  class="h-96 w-full object-cover group-hover:scale-105 transition-all duration-500">
+                            <div class="text-white absolute  p-4 pb-6 inset-0  flex justify-end  flex-col gap-1 bg-gradient-to-t from-black to-25%">
+                                <div class="font-medium text-xl">Blake Reid</div>
+                                <div class="text-sm font-light">Junior Copywriter</div>
+                            </div>
+                        </div>
+                        <div class="grayscale rounded-3xl overflow-hidden bg-slate-600 relative group ">
+                            <img src="./../assets/images/kathryn-murphy team.webp" alt=""  class="h-96 w-full object-cover group-hover:scale-105 transition-all duration-500">
+                            <div class="text-white absolute  p-4 pb-6 inset-0  flex justify-end  flex-col gap-1 bg-gradient-to-t from-black to-25%">
+                                <div class="font-medium text-xl">Kathryn Murphy</div>
+                                <div class="text-sm font-light">VP, Human Resources</div>
+                            </div>
+                        </div>
+                        <div class="grayscale rounded-3xl overflow-hidden bg-slate-600 relative group ">
+                            <img src="./../assets/images/whitney-franci tem.webp" alt=""  class="h-96 w-full object-cover group-hover:scale-105 transition-all duration-500">
+                            <div class="text-white absolute  p-4 pb-6 inset-0  flex justify-end  flex-col gap-1 bg-gradient-to-t from-black to-25%">
+                                <div class="font-medium text-xl">Whitney Francis</div>
+                                <div class="text-sm font-light">Content Specialist</div>
+                            </div>
+                        </div>
+                        <div class="grayscale rounded-3xl overflow-hidden bg-slate-600 relative group ">
+                            <img src="./../assets/images/jeffrey-webb tem.webp" alt=""  class="h-96 w-full object-cover group-hover:scale-105 transition-all duration-500">
+                            <div class="text-white absolute  p-4 pb-6 inset-0  flex justify-end  flex-col gap-1 bg-gradient-to-t from-black to-25%">
+                                <div class="font-medium text-xl">Jeffrey Webb</div>
+                                <div class="text-sm font-light">Account Coordinator</div>
+                            </div>
+                        </div>
+                        <div class="grayscale rounded-3xl overflow-hidden bg-slate-600 relative group ">
+                            <img src="./../assets/images/benjamin-russel tem.webp" alt=""  class="h-96 w-full object-cover group-hover:scale-105 transition-all duration-500">
+                            <div class="text-white absolute  p-4 pb-6 inset-0  flex justify-end  flex-col gap-1 bg-gradient-to-t from-black to-25%">
+                                <div class="font-medium text-xl">Benjamin Russel</div>
+                                <div class="text-sm font-light">Senior Developer</div>
+                            </div>
+                        </div>
+                        <div class="grayscale rounded-3xl overflow-hidden bg-slate-600 relative group ">
+                            <img src="./../assets/images/angela-fisher tem.webp" alt=""  class="h-96 w-full object-cover group-hover:scale-105 transition-all duration-500">
+                            <div class="text-white absolute  p-4 pb-6 inset-0  flex justify-end  flex-col gap-1 bg-gradient-to-t from-black to-25%">
+                                <div class="font-medium text-xl">Angela Fisher</div>
+                                <div class="text-sm font-light">Front-end Developer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--   From The Blog Start   -->
+
+            <div class="bg-gradient-to-b from-neutral-100  flex flex-col gap-24 px-10 md:px-40 py-12 md:py-32  xl:-mx-40   rounded-[42px]">
+                <div class="flex flex-col gap-7 ">
+                    <h3 class="text-2xl font-semibold">From the blog</h3>
+                    <h3 class="text-xl text-neutral-500 leading-8">Our team of experienced designers and developers has just one thing on <br>their mind; working on your ideas to draw a smile on the face of your <br>users worldwide. From conducting Brand Sprints to UX Design.</h3>
+                </div>
+
+                <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-10">
+                    <a href="./The Future of Web Development.html" class="flex gap-6">
+                        <div class="flex flex-col gap-2">
+                            <div class="h-7 bg-black w-px"></div>
+                            <div class="h-full bg-neutral-300 w-px"></div>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div class="text-sm text-neutral-600">April 6,2023</div>
+                            <div class="text-base font-semibold">The Future of Web Developement:Our Prediction for 2023</div>
+                            <div class="text-base text-neutral-600 leading-7">Let’s explore the latest trends in web development, and regurgitate some predictions we read on X for how they will shape the industry in the coming year.</div>
+                            <div class="font-semibold">Read more <i class="fa fa-arrow-right-long"></i></div>
+                        </div>    
+                    </a>
+                    <a href="./3 Lessons We Learned.html" class="flex gap-6">
+                        <div class="flex flex-col gap-2">
+                            <div class="h-7 bg-black w-px"></div>
+                            <div class="h-full bg-neutral-300 w-px"></div>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div class="text-sm text-neutral-600">February 18,2023</div>
+                            <div class="text-base font-semibold">3 Lesson We Learned Back Going to the Office</div>
+                            <div class="text-base text-neutral-600 leading-7">Earlier this year we made the bold decision to make everyone come back to the office full-time after two years working from a dressing table in the corner of their bedroom.</div>
+                            <div class="font-semibold">Read more <i class="fa fa-arrow-right-long"></i></div>
+                        </div>    
+                    </a>                   
+                    
+                </div>
+            </div>
+
+            <!-- Tell us about your project section start -->
+            <div class="w-full bg-black text-white rounded-[42px] p-10  md:p-28 flex flex-col gap-10  ">
+                <h2 class="text-3xl font-semibold text">Tell us about your project</h2>
+                <button class="w-fit bg-white text-black text-sm py-2 px-3 rounded-3xl ">Say Hej</button>
+                <div class="w-full h-px bg-neutral-800"></div>
+                <div class="w-full flex flex-col gap-8 text-base">
+                    <div class="">Our offices</div>
+                    <div class="w-full flex flex-col md:flex-row ">
+                        <div class="w-1/2 flex flex-col gap-1 ">
+                            <h2>Copenhagen</h2>
+                            <p class="text-neutral-400 text-sm leading-6">1 Carlsberg Gate<br>1260, København, Denmark</p>
+                        </div>
+                        <div class="w-1/2 flex flex-col gap-1 ">
+                            <h2 class="">Billund</h2>
+                            <p class="text-neutral-400 text-sm leading-6">24 Lego Allé<br>7190, Billund, Denmark</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer list section start -->
+            <footer class="w-full flex flex-col xl:flex-row py-20 gap-10 lg:gap-40 ">
+                <div class=" w-full xl:w-1/2 flex xl:gap-40 justify-around flex-wrap sm:flex-nowrap text-neutral-600 text-sm text-nowrap ">
+                    <ul class="flex flex-col gap-6 ">
+                        <li class="text-black font-semibold">Work</li>
+                        <li><a href="./Case-study-1.html">FamilyFund</a></li>
+                        <li><a href="./Case-study-2.html">Unsseal</a></li>
+                        <li><a href="./Case-study-3.html">Phobia</a></li>
+                        <li><a href="./Our-Work.html">See all <i class="fa fa-arrow-right-long"></i></a></li>
+                    </ul>
+                    <ul class="flex flex-col gap-6 ">
+                        <li class="text-black font-semibold">Company</li>
+                        <li><a href="./About.html">About</a></li>
+                        <li><a href="./our-process.html">Process</a></li>
+                        <li><a href="./Blog.html">Blog</a></li>
+                        <li><a href="./contact-us.html">Contact us</a></li>
+                    </ul>
+                    <ul class="flex flex-col gap-6 ">
+                        <li class="text-black font-semibold">Connect</li>
+                        <li><a href="https://www.facebook.com/">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                        <li><a href="https://github.com/">GitHub</a></li>
+                        <li><a href="https://dribbble.com/">Dribble</a></li>
+                    </ul>
+                </div>
+                <div class="xl:pl-40 pr-24 xl:pr-0 p-10 md:p-0 flex flex-col gap-6 text-neutral-600">
+                    <p class="text-black font-semibold">Sign up for our newsletter</p>
+                    <p class="text-sm leading-6">Subscribe to get the latest design news, articles, resources and inspiration.</p>
+                    <form class="relative"  action="">                        
+                        <input type="email" class="w-full rounded-lg border-2 p-4 focus:shadow-md pr-20" placeholder="Email address">
+                        <div class="absolute top-1 right-1 flex items-center justify-center h-5/6 w-14 rounded-lg text-white m-px bg-black"><i class=" fa fa-arrow-right-long"></i></div>
+                    </form>
+                </div>
+            </footer>
+
+            <hr>
+            <!-- footer section -->
+            <div class="flex justify-between items-center flex-wrap py-16 px-10 md:px-0">
+                <div class="text-2xl font-semibold ">Studio.</div>
+                <div class="text-neutral-700">&copy;Studio Agency Inc.2024</div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

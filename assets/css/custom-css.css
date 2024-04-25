@@ -1,0 +1,49 @@
+@font-face {
+    font-family: mona-sans;
+    src: url(./../fonts/mona-sans-cufonfonts-webfont/Mona-Sans.woff);
+}
+
+
+
+
+body{
+    scroll-behavior: smooth;
+    font-family:mona-sans;
+    font-variation-settings: 'wdth' 125;
+}
+
+
+
+/* card animation start */
+
+#card-animation-1{
+    animation: card-anim 2.5s ;
+    animation-delay: 2ms;
+    
+}
+#card-animation-2{
+    animation: card-anim 2.5s ;
+    animation-delay: 80ms;
+    
+}
+#card-animation-3{
+    animation: card-anim 2.5s ;
+    animation-delay: 100ms;
+    
+}
+
+@keyframes card-anim {
+
+    0%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/* card animation end */
+
+
+
+

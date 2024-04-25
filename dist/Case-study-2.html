@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unseal Case Study</title>
+
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="./../assets/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <!-- custom css start -->
+    <link rel="stylesheet" href="./../assets/css/custom-css.css">
+    <!-- custom css end -->
+
+    <!-- Tailwind css start -->    
+    <link rel="stylesheet" href="./../assets/css/style.css">
+    <!-- Tailwind css End -->
+
+    <!-- custom javascript start -->
+    <script src="./../assets/css/custom-js.js"></script>
+    <!-- custom javascript end -->
+
+    <!-- google font link start -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- google font link end -->
+
+    <!-- npx tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch -->
+</head>
+<body class="box-border" >
+    <div class="m-auto w-full min-h-full bg-black flex flex-col">
+        
+        <!-- Hamburger manu start---------------------------------------------------------------------- -->
+
+        <div class="hidden flex-col" id="hide-show-hamburger-section" >
+            <!-- navbar menu section start -->
+
+            <div class="flex flex-row justify-between px-20 lg:px-40 py-16 mt-2">
+                <div class="">
+                    <h1 class="text-white text-2xl font-semibold "><a href="./index.html">Studio.</a</h1>
+                </div>
+                <div class="flex flex-row gap-4 items-center ">
+                    <button class="h-fit text-black text-base font-semibold bg-white rounded-3xl px-5 py-2"><a href="./contact-us.html">Contact us</a></button>
+                    <button class="flex flex-col text-white text-2xl justify-center items-center  w-12 h-12 rounded-full hover:bg-zinc-900" id="burger1" onclick="hideshow()">
+                       <i class="fa fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- navbar menu section end -->
+
+            <!-- navbar link section start -->
+
+            <ul class="min-w-full flex flex-col md:flex-row align-middle">
+                <li class="p-10 md:px-20 lg:px-40 md:py-16 w-full md:w-1/2 text-white text-5xl text-nowrap border-[1px] hover:bg-zinc-900 transition-colors delay-100 border-stone-800" ><a href="./Our-Work.html">Our work</a></li>
+                <li class="p-10 md:p-16 w-full md:w-1/2 text-white text-5xl text-nowrap border-[1px] hover:bg-zinc-900 transition-colors delay-100 border-stone-800"><a href="./About.html">About Us</a></li>
+            </ul>
+            <ul class="min-w-full flex flex-col md:flex-row align-middle">
+                <li class="p-10 md:px-20 lg:px-40 md:py-16 w-full md:w-1/2 text-white text-5xl text-nowrap border-[1px] hover:bg-zinc-900 transition-colors delay-100 border-stone-800"><a href="./our-process.html">Our Process</a></li>
+                <li class="p-10 md:p-16 w-full md:w-1/2 text-white text-5xl text-nowrap border-[1px] hover:bg-zinc-900 transition-colors delay-100 border-stone-800"><a href="./Blog.html">Blog</a></li>
+            </ul>
+
+            <!-- navbar link section end -->
+
+
+            <!-- navbar contact section start -->
+
+            <div class="text-white w-full flex flex-col gap-12 md:gap-0 md:flex-row px-20 lg:px-40 py-16 ">
+                <div class="w-full md:w-1/2 flex flex-col gap-5">
+                    <h2 class="text-lg font-semibold">Our offices</h2>
+                    <div class="flex flex-col md:flex-row gap-5 md:gap-0 justify-between">
+                        <div class="w-full md:w-1/2">
+                            <h2 class="font-semibold">Copenhagen</h2>
+                            <p class="text-base font-light">1 Carlsberg Gate</p>
+                            <p class="text-base font-light">1260, København, Denmark</p>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <h2 class="font-semibold">Billund</h2>
+                            <p class="text-base font-light">24 Lego Allé</p>
+                            <p class="text-base font-light">7190, Billund, Denmark</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 md:pl-16 flex flex-col gap-5">
+                    <h2 class="text-lg font-semibold">Follow</h2>
+                    <div class="flex gap-14">
+                        <div class="text-2xl"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></div>
+                        <div class="text-2xl"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></div>
+                        <div class="text-2xl"><a href="https://github.com/"><i class="fa-brands fa-github"></i></a></div>
+                        <div class="text-2xl"><a href="https://dribbble.com/"><i class="fa-brands fa-dribbble"></i></a></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- navbar contact section end -->
+            
+        </div>
+
+        <!-- Hamburger manu end---------------------------------------------------------------------- -->
+
+        <div class="w-full h-full bg-white flex flex-col gap-4  px-0 md:px-10 xl:px-40 rounded-t-[42px] mt-2">
+            
+            <div class="flex flex-row justify-between  py-16 px-10 md:px-0 " id="navhide">
+                <div class="">
+                    <h1 class="text-black text-2xl font-semibold"><a href="./../index.html">Studio.</a></h1>
+                </div>
+                <div class="flex flex-row gap-4 items-center ">
+                    <button class="h-fit text-white text-base font-semibold bg-black rounded-3xl px-5 py-2 "><a href="./contact-us.html">Contact us</a></button>
+                    <div class="flex flex-col justify-center items-center gap-2 w-12 h-12 rounded-full hover:bg-gray-200" onclick="hideshow()">
+                        <div class="bg-black w-6 h-0.5" ></div>
+                        <div class="bg-black w-6 h-0.5" ></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case study section start -->
+            
+            <div class="w-full flex flex-col  items-center gap-7 mt-10 px-10 md:px-0">
+                <h3 class="text-base font-semibold">Case Study</h3>
+                <h2 class="text-5xl  font-medium">Get a hodl of your health</h2>
+                <p class=" text-neutral-500 text-xl leading-8 text-center">Unseal is the first NFT platform where users can mint and trade NFTs of their own <br> personal health records, allowing them to take control of their data.</p>
+            </div>
+
+            <!-- img section start -->
+
+            <div class="flex flex-col  md:-mx-10 xl:-mx-40 mt-32" >
+                <div class="border-y-[1px] px-10 md:px-0  w-full xl:px-40 ">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 sm:px-20">
+                        <div class="flex flex-col text-sm sm:border-l-[1px] sm:px-4 py-4">
+                            <p class="font-semibold">Client</p>
+                            <p class="text-neutral-600">Unseal</p>
+                        </div>
+                        <div class="flex flex-col text-sm sm:border-l-[1px] sm:px-4 py-4">
+                            <p class="font-semibold">Year</p>
+                            <p class="text-neutral-600">2022</p>
+                        </div>
+                        <div class="flex flex-col text-sm sm:border-l-[1px] sm:px-4 py-4">
+                            <p class="font-semibold">Service</p>
+                            <p class="text-neutral-600">Blockchain development</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bg-neutral-100 xl:px-40">
+                    <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" src="./../assets/images/unsal.webp" alt="" class="">
+
+                </div>
+            </div>
+
+            <!-- Overview section start  -->
+
+            <div class="mx-auto  max-w-3xl flex flex-col gap-8 px-10 md:px-10 mt-36">
+                <h2 class="text-2xl font-semibold">Overview</h2>
+                <p class="text-xl font-normal text-neutral-700 leading-8" style="font-variation-settings: 'wdth' 100;">Annoyed that his wife’s gynaecologist would not disclose the results of her pap smear, Unseal’s founder Kevin came up with the idea of using the block chain to store individual health records.</p>
+                <p class="text-xl font-normal text-neutral-700 leading-8" style="font-variation-settings: 'wdth' 100;">Unseal approached us early in their development, having just raised funds through an ICO of their cryptocurrency PlaceboCoin. Having never worked on a web3 product we decided to farm the project out to an agency in Kyiv and skim profits off the top. Despite frequent complaints about missile strikes and power outages, the Ukrainians delivered the brief ahead of schedule.</p>
+                <p class="text-xl font-normal text-neutral-700 leading-8" style="font-variation-settings: 'wdth' 100;">After reaching a high of $12k, PlaceboCoin went to zero in a matter of hours. Because we took payment in PlaceboCoin but our subcontractors insisted on being paid in USD we have taken a huge financial loss on this project.</p>
+
+                <h2 class="text-2xl font-semibold mt-8">What we did</h2>
+                <div class="flex flex-wrap gap-4 mt-1">
+                    <div class="w-fit bg-gray-100 py-2 px-3 rounded-full">Blockchain development</div>
+                    <div class="w-fit bg-gray-100 py-2 px-3 rounded-full">Backend (Solidity)</div>
+                    <div class="w-fit bg-gray-100 py-2 px-3 rounded-full">Smart contracts</div>
+                </div>
+
+                <div class="hidden sm:flex gap-16">
+                    <div class=" h-80 w-2/5 rounded-3xl overflow-hidden grayscale">
+                        <img class="w-full h-full object-cover" src="./../assets/images/emily-selman.webp"  alt="">
+                    </div>
+                    <div class="w-3/5 flex flex-col justify-center gap-5">
+                        <p class="text-lg font-medium text-neutral-500">Studio did an amazing job building out our core blockchain infrastructure and I’m sure once PlaceboCoin rallies they’ll be able to finish the project.</p>
+                        <p class="font-semibold">Emily Selman, Head of Engineering at Unseal</p>
+                    </div>
+                </div>
+
+                <p class="flex sm:hidden text-lg font-normal text-neutral-500">Studio did an amazing job building out our core blockchain infrastructure and I’m sure once PlaceboCoin rallies they’ll be able to finish the project.</p>
+
+                <div class="flex sm:hidden gap-4 items-center">
+                    <div class="w-12 h-12 grayscale rounded-xl overflow-hidden">
+                        <img src="./../assets/images/emily-selman.webp" alt="">
+                    </div>
+                    <div class="flex flex-col gap-1 text-sm">
+                        <p class="font-semibold">Emily Selman</p>
+                        <p class="text-neutral-600">Head of Engineering at Unseal</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--  Rating Section Start  -->
+
+            <div class=" grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-36 px-10 md:px-0 my-28">
+                <div class="flex gap-6">
+                    <div class="flex flex-col gap-2">
+                        <div class="h-7 bg-black w-px"></div>
+                        <div class="h-full bg-neutral-300 w-px"></div>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <h1 class="text-black text-3xl font-semibold">34%</h1>
+                        <p class="text-neutral-600">Fewer transactions</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="flex flex-col gap-2">
+                        <div class="h-7 bg-black w-px"></div>
+                        <div class="h-full bg-neutral-300 w-px"></div>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <h1 class="text-black text-3xl font-semibold">10%</h1>
+                        <p class="text-neutral-600">Slower transactions</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="flex flex-col gap-2">
+                        <div class="h-7 bg-black w-px"></div>
+                        <div class="h-full bg-neutral-300 w-px"></div>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <h1 class="text-black text-3xl font-semibold">1000ms</h1>
+                        <p class="text-neutral-600">Transaction latency</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="flex flex-col gap-2">
+                        <div class="h-7 bg-black w-px"></div>
+                        <div class="h-full bg-neutral-300 w-px"></div>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <h1 class="text-black text-3xl font-semibold">3</h1>
+                        <p class="text-neutral-600">Active nodes</p>
+                    </div>
+                </div>
+            </div>          
+
+            <!--   More case studies Start   -->
+
+            <div class="bg-gradient-to-b from-neutral-100  flex flex-col gap-24 px-10 md:px-40 py-12 md:py-32  xl:-mx-40   rounded-[42px]">
+                <div class="flex flex-col gap-7 ">
+                    <h3 class="text-2xl font-semibold">More case studies</h3>
+                </div>
+
+                <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-10">
+                    <a href="./Case-study-1.html" class="flex gap-6">
+                        <div class="flex flex-col gap-2">
+                            <div class="h-7 bg-black w-px"></div>
+                            <div class="h-full bg-neutral-300 w-px"></div>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div class="text-sm text-neutral-600">January 2023</div>
+                            <div class="text-base font-semibold">Skip the bank, borrow from those you trust</div>
+                            <div class="text-base text-neutral-600 leading-7">FamilyFund is a crowdfunding platform for friends and family. Allowing users to take personal loans from their network without a traditional financial institution.</div>
+                            <div class="font-semibold">Read more <i class="fa fa-arrow-right-long"></i></div>
+                        </div>    
+                    </a>
+                    <a href="./Case-study-3.html" class="flex gap-6">
+                        <div class="flex flex-col gap-2">
+                            <div class="h-7 bg-black w-px"></div>
+                            <div class="h-full bg-neutral-300 w-px"></div>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div class="text-sm text-neutral-600">June 2022</div>
+                            <div class="text-base font-semibold">Overcome your fears, find your match</div>
+                            <div class="text-base text-neutral-600 leading-7">Find love in the face of fear — Phobia is a dating app that matches users based on their mutual phobias so they can be scared together.</div>
+                            <div class="font-semibold">Read more <i class="fa fa-arrow-right-long"></i></div>
+                        </div>    
+                    </a>
+                    
+                    
+                </div>
+            </div>
+
+            <!-- Tell us about your project section start -->
+            <div class="w-full bg-black text-white rounded-[42px] p-10  md:p-28 flex flex-col gap-10  ">
+                <h2 class="text-3xl font-semibold text">Tell us about your project</h2>
+                <button class="w-fit bg-white text-black text-sm py-2 px-3 rounded-3xl ">Say Hej</button>
+                <div class="w-full h-px bg-neutral-800"></div>
+                <div class="w-full flex flex-col gap-8 text-base">
+                    <div class="">Our offices</div>
+                    <div class="w-full flex flex-col md:flex-row ">
+                        <div class="w-1/2 flex flex-col gap-1 ">
+                            <h2>Copenhagen</h2>
+                            <p class="text-neutral-400 text-sm leading-6">1 Carlsberg Gate<br>1260, København, Denmark</p>
+                        </div>
+                        <div class="w-1/2 flex flex-col gap-1 ">
+                            <h2 class="">Billund</h2>
+                            <p class="text-neutral-400 text-sm leading-6">24 Lego Allé<br>7190, Billund, Denmark</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer list section start -->
+            <footer class="w-full flex flex-col xl:flex-row py-20 gap-10 lg:gap-40 ">
+                <div class=" w-full xl:w-1/2 flex xl:gap-40 justify-around flex-wrap sm:flex-nowrap text-neutral-600 text-sm text-nowrap ">
+                    <ul class="flex flex-col gap-6 ">
+                        <li class="text-black font-semibold">Work</li>
+                        <li><a href="./Case-study-1.html">FamilyFund</a></li>
+                        <li><a href="./Case-study-2.html">Unsseal</a></li>
+                        <li><a href="./Case-study-3.html">Phobia</a></li>
+                        <li><a href="./Our-Work.html">See all <i class="fa fa-arrow-right-long"></i></a></li>
+                    </ul>
+                    <ul class="flex flex-col gap-6 ">
+                        <li class="text-black font-semibold">Company</li>
+                        <li><a href="./About.html">About</a></li>
+                        <li><a href="./our-process.html">Process</a></li>
+                        <li><a href="./Blog.html">Blog</a></li>
+                        <li><a href="./contact-us.html">Contact us</a></li>
+                    </ul>
+                    <ul class="flex flex-col gap-6 ">
+                        <li class="text-black font-semibold">Connect</li>
+                        <li><a href="https://www.facebook.com/">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                        <li><a href="https://github.com/">GitHub</a></li>
+                        <li><a href="https://dribbble.com/">Dribble</a></li>
+                    </ul>
+                </div>
+                <div class="xl:pl-40 pr-24 xl:pr-0 p-10 md:p-0 flex flex-col gap-6 text-neutral-600">
+                    <p class="text-black font-semibold">Sign up for our newsletter</p>
+                    <p class="text-sm leading-6">Subscribe to get the latest design news, articles, resources and inspiration.</p>
+                    <form class="relative"  action="">                        
+                        <input type="email" class="w-full rounded-lg border-2 p-4 focus:shadow-md pr-20" placeholder="Email address">
+                        <div class="absolute top-1 right-1 flex items-center justify-center h-5/6 w-14 rounded-lg text-white m-px bg-black"><i class=" fa fa-arrow-right-long"></i></div>
+                    </form>
+                </div>
+            </footer>
+
+            <hr>
+            <!-- footer section -->
+            <div class="flex justify-between items-center flex-wrap py-16 px-10 md:px-0">
+                <div class="text-2xl font-semibold ">Studio.</div>
+                <div class="text-neutral-700">&copy;Studio Agency Inc.2024</div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

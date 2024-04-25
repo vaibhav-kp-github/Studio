@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio-home</title>
+
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="./../assets/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+
+    <!-- custom css start -->
+    <link rel="stylesheet" href="./assets/css/custom-css.css">
+    <!-- custom css end -->
+
+    <!-- Tailwind css start -->    
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Tailwind css End -->
+
+    <!-- custom javascript start -->
+    <script src="./assets/css/custom-js.js"></script>
+    <!-- custom javascript end -->
+
+    <!-- google font link start -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- google font link end -->
+
+</head>
+<body class="box-border" >
+    <div class="m-auto w-full min-h-full bg-black flex flex-col ">
+
+        <!-- Hamburger manu start---------------------------------------------------------------------- -->
+
+        <div class="hidden flex-col" id="hide-show-hamburger-section" >
+            <!-- navbar menu section start -->
+
+            <div class="flex flex-row justify-between px-20 lg:px-40 py-16 mt-2">
+                <div class="">
+                    <h1 class="text-white text-2xl font-semibold "><a href="./index.html">Studio.</a</h1>
+                </div>
+                <div class="flex flex-row gap-4 items-center ">
+                    <button class="h-fit text-black text-base font-semibold bg-white rounded-3xl px-5 py-2"><a href="./dist/contact-us.html">Contact us</a></button>
+                    <button class="flex flex-col text-white text-2xl justify-center items-center  w-12 h-12 rounded-full hover:bg-zinc-900" id="burger1" onclick="hideshow()">
+                       <i class="fa fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- navbar menu section end -->
+
+            <!-- navbar link section start -->
+
+            <ul class="min-w-full flex flex-col md:flex-row align-middle">
+                <li class="p-10 md:px-20 lg:px-40 md:py-16 w-full md:w-1/2 text-white text-5xl text-nowrap border-[1px] hover:bg-zinc-900 transition-colors delay-100 border-stone-800" ><a href="./dist/Our-Work.html">Our work</a></li>
+                <li class="p-10 md:p-16 w-full md:w-1/2 text-white text-5xl text-nowrap border-[1px] hover:bg-zinc-900 transition-colors delay-100 border-stone-800"><a href="./dist/About.html">About Us</a></li>
+            </ul>
+            <ul class="min-w-full flex flex-col md:flex-row align-middle">
+                <li class="p-10 md:px-20 lg:px-40 md:py-16 w-full md:w-1/2 text-white text-5xl text-nowrap border-[1px] hover:bg-zinc-900 transition-colors delay-100 border-stone-800"><a href="./dist/our-process.html">Our Process</a></li>
+                <li class="p-10 md:p-16 w-full md:w-1/2 text-white text-5xl text-nowrap border-[1px] hover:bg-zinc-900 transition-colors delay-100 border-stone-800"><a href="./dist/Blog.html">Blog</a></li>
+            </ul>
+
+            <!-- navbar link section end -->
+
+
+            <!-- navbar contact section start -->
+
+            <div class="text-white w-full flex flex-col gap-12 md:gap-0 md:flex-row px-20 lg:px-40 py-16 ">
+                <div class="w-full md:w-1/2 flex flex-col gap-5">
+                    <h2 class="text-lg font-semibold">Our offices</h2>
+                    <div class="flex flex-col md:flex-row gap-5 md:gap-0 justify-between">
+                        <div class="w-full md:w-1/2">
+                            <h2 class="font-semibold">Copenhagen</h2>
+                            <p class="text-base font-light">1 Carlsberg Gate</p>
+                            <p class="text-base font-light">1260, København, Denmark</p>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <h2 class="font-semibold">Billund</h2>
+                            <p class="text-base font-light">24 Lego Allé</p>
+                            <p class="text-base font-light">7190, Billund, Denmark</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 md:pl-16 flex flex-col gap-5">
+                    <h2 class="text-lg font-semibold">Follow</h2>
+                    <div class="flex gap-14">
+                        <div class="text-2xl"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></div>
+                        <div class="text-2xl"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></div>
+                        <div class="text-2xl"><a href="https://github.com/"><i class="fa-brands fa-github"></i></a></div>
+                        <div class="text-2xl"><a href="https://dribbble.com/"><i class="fa-brands fa-dribbble"></i></a></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- navbar contact section end -->
+            
+        </div>
+
+        <!-- Hamburger manu end---------------------------------------------------------------------- -->
+
+        <div class="w-full h-full bg-white flex flex-col gap-4  px-0 md:px-10 xl:px-40 rounded-t-[42px] mt-2">
+
+            <!-- Award winning section start -->
+            
+            <div class="flex flex-row justify-between  py-16 px-10 md:px-0" id="navhide">
+                <div class="">
+                    <h1 class="text-black text-2xl font-semibold "><a href="./index.html">Studio.</a</h1>
+                </div>
+                <div class="flex flex-row gap-4 items-center ">
+                    <button class="h-fit text-white text-base font-semibold bg-black rounded-3xl px-5 py-2" ><a href="./dist/contact-us.html">Contact us</a></button>
+                    <button class="flex flex-col justify-center items-center gap-2 w-12 h-12 rounded-full hover:bg-gray-200"  onclick="hideshow()">
+                        <div class="bg-black w-6 h-0.5" ></div>
+                        <div class="bg-black w-6 h-0.5" ></div>
+                    </button>
+                </div>
+            </div>
+            <h2 class="text-3xl md:text-6xl  font-medium md:leading-[75px] pt-14 md:pt-24 px-10 md:px-0">Award-winning <br class="md:flex hidden">development studio <br class="md:flex hidden">based in Denmark.</h2>
+            <p class="text-xl md:text-xl  text-neutral-600 px-10 md:p-0">We are a development studio working at the intersection of design and technology.<br class="md:flex hidden">It’s a really busy intersection though — a lot of our staff have been involved in hit<br class="md:flex hidden">and runs.</p>
+
+            <!-- Award winning section end -->
+
+
+            <!-- We’ve worked with hundreds of amazing people section start -->
+
+            <div class="bg-black text-white flex flex-col gap-10 px-10 md:px-40 py-12 md:py-32 mx-0 md:-mx-10 xl:-mx-40 mt-24 md:mt-56 rounded-[42px]">
+                <div class="flex gap-5 justify-center items-center">
+                    <div class="font-semibold text-wrap text-center md:text-nowrap">We’ve worked with hundreds of amazing people</div>
+                    <div class=" h-px bg-white w-0  md:w-full"></div>
+                </div>
+
+                <div class="w-full grid grid-cols-2 lg:grid-cols-4 gap-10">
+                    <div class="transition-all duration-300 delay-200"><img src="./assets/icons/1.phobia.svg" alt=""></div>
+                    <div class="transition-all duration-300 delay-200"><img src="./assets/icons/2.family fund.svg" alt=""></div>
+                    <div class="transition-all duration-300 delay-200"><img src="./assets/icons/3.unseal.svg" alt=""></div>
+                    <div class="transition-all duration-300 delay-200"><img src="./assets/icons/4.mailsmirik.svg" alt=""></div>
+                    <div class="transition-all duration-300 delay-200"><img src="./assets/icons/5.home work.svg" alt=""></div>
+                    <div class="transition-all duration-300 delay-200"><img src="./assets/icons/6.greenlife.svg" alt=""></div>
+                    <div class="transition-all duration-300 delay-200"><img src="./assets/icons/7.bright path.svg" alt=""></div>
+                    <div class="transition-all duration-300 delay-200"><img src="./assets/icons/8.north adventures.svg" alt=""></div>
+                </div>
+            </div>
+
+            <!-- We’ve worked with hundreds of amazing people section end -->
+
+            <!-- Harnessing technology section start -->
+
+
+            <div class="flex flex-col gap-6 mt-24 px-10 md:px-0">
+                <h2 class="text-lg md:text-4xl font-medium ">Harnessing technology <br> for a brighter future</h2>
+                <p class="text-lg md:text-xl text-neutral-500">We believe technology is the answer to the world’s greatest challenges. <br>
+                It’s also the cause, so we find ourselves in bit of a catch 22 situation.</p>
+                
+            </div>
+
+            <!-- Harnessing technology section start -->
+
+            <!-- card section start -->
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-24 p-10 md:p-0">
+                <a href="./dist/Case-study-1.html" class="flex flex-col gap-5 hover:bg-slate-50 p-8  rounded-2xl border-[1px]" id="card-animation-1" >
+                    <img width="65" src="./assets/icons/card-icon-1.svg" alt="">
+                    <div class="">2022 <span>/</span>  <span class="text-sm">Case study</span></div>
+                    <div class=" text-2xl font-semibold">Skip the bank,borrow from those you trust</div>
+                    <div class="text-base  font-light " style="font-variation-settings: 'wdth' 100;">FamilyFund is a crowdfunding platform for friends and family. Allowing users to take personal loans from their network without a traditional financial institution.</div>
+                </a>
+                <a href="./dist/Case-study-2.html" class="flex flex-col gap-5 hover:bg-slate-50 p-8  rounded-2xl border-[1px]" id="card-animation-2">
+                    <img width="65" src="./assets/icons/card-icon-2.svg" alt="">
+                    <div class="">2022 <span>/</span>  <span class="text-sm">Case study</span></div>
+                    <div class=" text-2xl font-semibold">Get a hodl of your health</div>
+                    <div class="text-base  font-light " style="font-variation-settings: 'wdth' 100;">Unseal is the first NFT platform where users can mint and trade NFTs of their own personal health records, allowing them to take control of their data.</div>
+                </a>
+                <a href="./dist/CAse-study-3.html" class="flex flex-col gap-5 hover:bg-slate-50 p-8  rounded-2xl border-[1px]" id="card-animation-3">
+                    <img width="65" src="./assets/icons/card-icon-3.svg" alt="">
+                    <div class=" ">2022<span>/</span> <span class="text-sm">Case study</span></div>
+                    <div class=" text-2xl font-semibold">Overcome your fears, find your match</div>
+                    <div class="text-base  font-light " style="font-variation-settings: 'wdth' 100;">Find love in the face of fear — Phobia is a dating app that matches users based on their mutual phobias so they can be scared together.</div>
+                </a>
+            </div>
+
+            <!-- card section end -->
+
+
+            <!-- phobia section start -->
+
+            <div class="flex flex-col gap-8 m-auto px-12 md:px-32 py-32 md:py-64 text-1xl font-semibold md:text-3xl text-wrap  ">
+                <p>"The team at Studio went above and beyond with our onboarding, even finding a way to access the user’s microphone without triggering one of those annoying permission dialogs."</p>
+                <img width="200" src="./assets/icons/phobia black.svg" alt="">
+            </div>
+
+            <!-- phobia section end -->
+
+
+            <!-- services section start -->
+
+            <div class="flex flex-col gap-6 px-10 md:px-0">
+                <div class="text-lg font-medium">Services</div>
+                <div class="text-2xl md:text-4xl font-semibold md:font-medium">We help you identify, explore and <br> respond to new opportunities.</div>
+                <div class="lg: md:text-xl text-neutral-500 ">As long as those opportunities involve giving us money to re-purpose old <br> projects — we can come up with an endless number of those.</div>
+            </div>
+
+            <div class="lg:-mx-16 w-full grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-8 py-10 px-10 lg:px-0 ">
+                <div class=" h-fit lg:h-[650px]  rounded-2xl overflow-hidden group ">
+                    <img class="group-hover:scale-110 transition-all duration-700 grayscale" src="./assets/images/laptop.webp" alt="">
+                </div>
+                <div class="flex flex-col gap-10 px-4 py-10">
+                    <div class="text-base text-neutral-600 leading-7">
+                        <span class="font-semibold text-black">Web development.</span> We specialise in crafting beautiful, high quality marketing pages. The rest of the website will be a shell that uses lorem ipsum everywhere.
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <hr class="w-6 h-px bg-black"><hr class="w-full ">
+                    </div>
+                    <div class="text-base text-neutral-600 leading-7">
+                        <span class="font-semibold text-black">Application development.</span> We have a team of skilled developers who are experts in the latest app frameworks, like Angular 1 and Google Web Toolkit.
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <hr class="w-6 h-px bg-black"><hr class="w-full ">
+                    </div>
+                    <div class="text-base text-neutral-600 leading-7">
+                        <span class="font-semibold text-black">E-commerce.</span> We are at the forefront of modern e-commerce development. Which mainly means adding your logo to the Shopify store template we’ve used for the past six years.
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <hr class="w-6 h-px bg-black"><hr class="w-full ">
+                    </div>
+                    
+                    <div class="text-base text-neutral-600 leading-7">
+                        <span class="font-semibold text-black">Custom content management.</span> At Studio we understand the importance of having a robust and customised CMS. That’s why we run all of our client projects out of a single, enormous Joomla instance.
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- services section end -->
+            
+
+            <!--  Tell us about your project start-->
+
+            <div class="w-full bg-black text-white rounded-[42px] p-10 md:p-28 flex flex-col gap-10  mt-28">
+                <h2 class="text-3xl font-semibold text">Tell us about your project</h2>
+                <button class="w-fit bg-white text-black text-sm py-2 px-3 rounded-3xl ">Say Hej</button>
+                <div class="w-full h-px bg-neutral-800"></div>
+                <div class="w-full flex flex-col gap-8 text-base">
+                    <div class="">Our offices</div>
+                    <div class="w-full flex flex-col md:flex-row ">
+                        <div class="w-1/2 flex flex-col gap-1 ">
+                            <h2>Copenhagen</h2>
+                            <p class="text-neutral-400 text-sm leading-6">1 Carlsberg Gate<br>1260, København, Denmark</p>
+                        </div>
+                        <div class="w-1/2 flex flex-col gap-1 ">
+                            <h2 class="">Billund</h2>
+                            <p class="text-neutral-400 text-sm leading-6">24 Lego Allé<br>7190, Billund, Denmark</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  Tell us about your project end-->
+
+            <footer class="w-full flex flex-col xl:flex-row py-20 gap-10 lg:gap-40 ">
+                <div class=" w-full xl:w-1/2 flex xl:gap-40 justify-around flex-wrap sm:flex-nowrap text-neutral-600 text-sm text-nowrap ">
+                    <ul class="flex flex-col gap-6 ">
+                        <li class="text-black font-semibold">Work</li>
+                        <li><a href="./dist/Case-study-1.html">FamilyFund</a></li>
+                        <li><a href="./dist/Case-study-2.html">Unsseal</a></li>
+                        <li><a href="./dist/Case-study-3.html">Phobia</a></li>
+                        <li><a href="./dist/Our-Work.html">See all <i class="fa fa-arrow-right-long"></i></a></li>
+                    </ul>
+                    <ul class="flex flex-col gap-6 ">
+                        <li class="text-black font-semibold">Company</li>
+                        <li><a href="./dist/About.html">About</a></li>
+                        <li><a href="./dist/our-process.html">Process</a></li>
+                        <li><a href="./dist/Blog.html">Blog</a></li>
+                        <li><a href="./dist/contact-us.html">Contact us</a></li>
+                    </ul>
+                    <ul class="flex flex-col gap-6 ">
+                        <li class="text-black font-semibold">Connect</li>
+                        <li><a href="https://www.facebook.com/">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                        <li><a href="https://github.com/">GitHub</a></li>
+                        <li><a href="https://dribbble.com/">Dribble</a></li>
+                    </ul>
+                </div>
+                <div class="xl:pl-40 pr-24 xl:pr-0 p-10 md:p-0 flex flex-col gap-6 text-neutral-600">
+                    <p class="text-black font-semibold">Sign up for our newsletter</p>
+                    <p class="text-sm leading-6">Subscribe to get the latest design news, articles, resources and inspiration.</p>
+                    <form class="relative"  action="">                        
+                        <input type="email" class="w-full rounded-lg border-2 p-4 focus:shadow-md pr-20" placeholder="Email address">
+                        <div class="absolute top-1 right-1 flex items-center justify-center h-5/6 w-14 rounded-lg text-white m-px bg-black"><i class=" fa fa-arrow-right-long"></i></div>
+                    </form>
+                </div>
+            </footer>
+
+            <hr>
+
+            <div class="flex justify-between items-center flex-wrap py-16 px-10 md:px-0">
+                <div class="text-2xl font-semibold">Studio.</div>
+                <div class="text-neutral-700">&copy;Studio Agency Inc.2024</div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
